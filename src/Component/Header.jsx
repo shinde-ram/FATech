@@ -34,7 +34,7 @@ function Header() {
                     {/* WhatsApp & Call (Always Visible) */}
                     <div className="flex items-center justify-center md:gap-6 mr-4 w-[30%] md:w-[30%]">
                         <a
-                            href="https://wa.me/918767074603"
+                            href="https://wa.me/917720074666"
                             target="_blank"
                             rel="noopener noreferrer"
                             className=""
@@ -46,7 +46,7 @@ function Header() {
 
 
                         </a>
-                        <a href="tel:+918767074603" className=" ">
+                        <a href="tel:+917720074666" className=" ">
                             <div className='p-3.5 text-md md:text-xl xl:text-3xl  text-white bg-green-500 rounded-full hover:scale-115 ease-in-out duration-300 hidden md:flex'>
 
                                 <PiPhoneCallFill />
