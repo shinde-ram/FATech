@@ -69,7 +69,7 @@ const ContactAndGoals = () => {
             </div>
             <div className="flex items-center gap-3 break-all">
               <FaEnvelope className="text-blue-600 text-xl" />
-              <a href="mailto:futureadvancedtechnologies@gmail.com">
+              <a href="mailto:futureadvancedtechnologies@gmail.com" target="_blank"> 
                 futureadvancedtechnologies@gmail.com
               </a>
             </div>

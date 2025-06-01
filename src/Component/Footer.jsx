@@ -44,10 +44,10 @@ const Footer = () => {
           <p className="text-gray-400">Jay Anand complex ,3rd floor fadai chowk, above muthoot finance, Wagholi, Pune</p>
           <p className="text-gray-400 mt-2">Email: futureadvancedtechnologies@gmail.com</p>
           <div className="flex space-x-4 mt-4">
-            <a href="#"><Facebook className="text-gray-300 hover:text-white" /></a>
-            <a href="#"><Twitter className="text-gray-300 hover:text-white" /></a>
-            <a href="#"><Instagram className="text-gray-300 hover:text-white" /></a>
-            <a href="#"><Mail className="text-gray-300 hover:text-white" /></a>
+            <a href="https://facebook.com/future_advanced_technologies" target="_blank"><Facebook className="text-gray-300 hover:text-white" /></a>
+           
+            <a href="https://instagram.com/future_advanced_technologies" target="_blank"><Instagram className="text-gray-300 hover:text-white " /></a>
+            <a href="mailto:futureadvancedtechnologies@gmail.com" target="_blank"><Mail className="text-gray-300 hover:text-white" /></a>
           </div>
         </div>
       </div>

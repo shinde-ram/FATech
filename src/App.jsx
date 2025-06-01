@@ -10,6 +10,7 @@ import DepartmentCourses from './Component/Courses/DepartmentCourses'
 import ScrollToTop from './Component/ScrollToTop'
 import CourseDetails from './Component/Courses/CourseDetails'
 import AboutUs from './Component/AboutUs/AboutUs'
+import CourseEnrollForm from './Component/CourseEnrollForm'
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/courses/:department/:title" element={<CourseDetails />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/courseEnroll/:course" element={<CourseEnrollForm/>}></Route>
 
       </Routes>
       <Footer />
