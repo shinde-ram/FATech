@@ -10,4 +10,19 @@ export default defineConfig({
 
   ],
    base: './',
+   build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('lottie-web')) {
+              return 'vendor_lottie'
+            }
+            return 'vendor'
+          }
+        }
+      }
+    },
+    chunkSizeWarningLimit: 4000 // raise warning limit if you want (optional)
+  }
 })
