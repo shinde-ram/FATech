@@ -5,6 +5,10 @@
 .swiper-button-prev {
   display: none !important;
 }
+body{
+    overflow-x: hidden;
+  
+}
 
 .perspective {
   perspective: 1000px;

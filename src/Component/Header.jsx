@@ -14,16 +14,16 @@ function Header() {
     return (
         <div className="bg-gray-100 w-full max-h-[30vh] ">
             {/* Header Container */}
-            <div className="flex flex-wrap items-center justify-evenly w-full   rounded-3xl">
+            <div className="flex flex-wrap items-center justify-evenly w-full    rounded-3xl">
                 {/* <div className='absolute left-0 md:left-2'> */}
                 {/* </div> */}
                 {/* Left Side Name */}
                 <div className="w-[70%] md:w-1/2 mb-2 flex justify-evenly items-center">
-                    <div className='w-[20%] p-0 md:pt-2'>
-                        <img src={logo} alt="Logo" className='h-full w-24  sm:w-24 md:w-32 ' />
+                    <div className='w-[30%] p-0 ms-3 md:pt-2'>
+                        <img src={logo} alt="Logo" className='w-24 md:w-32 ' />
                     </div>
                     <div className='w-80%'>
-                        <p style={{ fontFamily: "'Emilys Candy', cursive" }} className=" p-0 md:px-4 font-bold text-md  md:text-2xl xl:text-3xl text-black text-center">
+                        <p style={{ fontFamily: "'Emilys Candy', cursive" }} className=" p-0 md:px-4 font-bold text-xl  md:text-2xl xl:text-3xl text-black text-center">
                             Future Advanced Technologies
                         </p>
                     </div>

@@ -1,10 +1,11 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import leftside from '../assets/registeration.jpg';
 import bg from '../assets/form-bg.jpg';
 import { databases } from '../../appwriteConfig'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { ArrowLeft } from 'lucide-react';
 
 
 const CourseEnrollForm = () => {
@@ -20,6 +21,14 @@ const CourseEnrollForm = () => {
         city_name: '',
         class_degree: '',
     });
+
+    // State for fade-in effect
+    const [visible, setVisible] = useState(false);
+
+    useEffect(() => {
+        // Trigger fade-in after mount
+        setVisible(true);
+    }, []);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -40,8 +49,8 @@ const CourseEnrollForm = () => {
             );
             toast.success("🎉 You have successfully enrolled!");
             setTimeout(() => {
-            navigate("/courses");
-        }, 3000);
+                navigate("/courses");
+            }, 3000);
         } catch (error) {
             console.log(error);
             toast.error("❌ Please Try Again");
@@ -49,24 +58,39 @@ const CourseEnrollForm = () => {
     };
 
     return (
-        <div className="relative min-h-screen flex items-center justify-center bg-cover bg-center px-4 py-10" style={{ backgroundImage: `url(${bg})` }}>
+        <div
+            className={`relative min-h-screen flex items-center justify-center bg-cover bg-center px-4 py-10 transition-opacity duration-700 ease-in-out 
+            ${visible ? 'opacity-100' : 'opacity-0'}`}
+            style={{ backgroundImage: `url(${bg})` }}
+        >
+
             {/* Background Overlay */}
             <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
+
 
             <div className="relative z-10 w-full max-w-6xl bg-white bg-opacity-90 shadow-2xl rounded-xl flex flex-col md:flex-row justify-center items-center overflow-hidden">
 
                 {/* Left Side Illustration with Green BG */}
-                <div className="hidden md:flex md:w-1/2  justify-center items-center p-4">
+                <div className="hidden md:flex md:w-1/2 justify-center items-center p-4">
                     <img src={leftside} alt="Illustration" className="h-full w-[80%] object-contain" />
                 </div>
+            <div className="absolute top-10 left-4 z-50 ">
+                <button
+                    onClick={() => navigate(-1)}
+                    className="flex items-center gap-2 text-blue-600 hover:text-black font-semibold bg-blue-100 px-3 py-1 rounded-full shadow-md backdrop-blur-sm"
+                >
+                    <ArrowLeft className="w-5 h-5" />
+                    Back
+                </button>
+            </div>
 
-                <div className="absolute top-0 py-1 w-full bg-blue-300  text-center text-black font-medium  text-lg">
+                <div className="absolute top-0 py-1 w-full bg-blue-300 text-center text-black font-medium text-lg">
                     After filling this form, our team will reach you
                 </div>
                 {/* Right Side Form */}
                 <div className="w-full md:w-1/2 p-8 md:p-12 mt-5">
 
-                    <h2 className="text-3xl font-bold text-center text-blue-700 mb-6">
+                    <h2 className="text-3xl font-bold text-center text-blue-700 mb-6 pt-5 md:pt-0">
                         Enroll for <span className="text-green-600">{decodedCourseTitle}</span>
                     </h2>
 
@@ -125,7 +149,7 @@ const CourseEnrollForm = () => {
 
                         <button
                             type="submit"
-                            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded font-semibold transition"
+                            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded font-semibold transition transform hover:scale-105 hover:shadow-lg"
                         >
                             Submit
                         </button>
@@ -144,7 +168,6 @@ const CourseEnrollForm = () => {
                 pauseOnHover
                 theme="colored"
             />
-
         </div>
     );
 };

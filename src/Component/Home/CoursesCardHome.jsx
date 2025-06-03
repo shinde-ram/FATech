@@ -23,8 +23,8 @@ function CoursesCard({ category, list,bg }) {
                                 </a>
                             ))}
                         </div>
-                        <Link to={`/courses/${category}`} className="lg:mt-[24px] md:mt-[20px] mt-[16px] flex flex-row items-center hover:text-[#5A4BDA] duration-200 text-[#1B2124]">
-                            <div className="cursor-pointer pr-[14px] lg:text-[18px] text-[16px] md:leading-[28px] leading-[22px]">
+                        <Link to={`/courses/${category}`} className="lg:mt-[24px] md:mt-[20px] mt-[16px] flex flex-row items-center hover:text-[#5A4BDA] duration-200 text-[#404ee7a9]">
+                            <div className="whitespace-nowrap cursor-pointer pr-[14px] lg:text-[18px] text-[16px] md:leading-[28px] leading-[22px]">
                                 Explore More courses
                             </div>
                             <div className="bg-[#F8F8F8] duration-200 md:px-[14px] px-[12px] md:py-[6px] py-[6px] rounded-[100px] flex items-center">

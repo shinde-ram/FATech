@@ -15,7 +15,7 @@ import CourseEnrollForm from './Component/CourseEnrollForm'
 function App() {
 
   return (
-    <>
+    <div className='overflow-x-hidden'>
       <Header />
             <ScrollToTop />
 
@@ -34,7 +34,7 @@ function App() {
 
       </Routes>
       <Footer />
-    </>
+    </div>
   )
 }
 

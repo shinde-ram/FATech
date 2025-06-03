@@ -2,6 +2,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { allCourses } from '../../Data/Courses';
 import React from 'react';
 import { Syllabus } from '../../Data/Syllabus'; // Adjust path
+import { ArrowLeft } from 'lucide-react';
 
 
 const CourseDetails = () => {
@@ -32,10 +33,20 @@ const CourseDetails = () => {
 
   return (
     <>
+
       <div className="w-full h-[5vh] bg-gradient-to-r from-green-400 to-green-400 flex items-center justify-center text-center mb-4">
         <p className="text-green-800 font-semibold text-sm sm:text-base">
           🎉 Visit our institute in person and get an <span className="underline underline-offset-4">extra discount</span> on selected courses!
         </p>
+      </div>
+      <div className="sticky top-2 ms:top-[5vh] ms-2 md:ms-5 z-50">
+        <button
+          onClick={() => navigate(-1)}
+          className="flex items-center gap-2 text-blue-600 hover:text-black font-semibold bg-blue-100 px-3 py-1 rounded-full shadow"
+        >
+          <ArrowLeft className="w-5 h-5" />
+          Back
+        </button>
       </div>
 
       <div className="w-[90%] md:w-[80%] mx-auto py-10">

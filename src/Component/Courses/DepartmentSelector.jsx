@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
+
 
 const departments = ['All Departments', 'Mechanical', 'IT_CS', 'Civil'];
 
@@ -8,7 +10,16 @@ export default function DepartmentSelector() {
   const { department } = useParams();
 
   return (
-    <div className='flex flex-wrap justify-start gap-2 md:gap-4 ms-2 md:ms-10 mb-8'>
+    <div className='flex flex-wrap justify-start gap-2 md:gap-4 ms-2 md:ms-2 mb-8'>
+      <div className="sticky top-2 ms:top-[5vh] ms-2 md:ms-5 z-50">
+        <button
+          onClick={() => navigate(-1)}
+          className="flex items-center gap-2 text-blue-600 hover:text-black font-semibold bg-blue-100 px-3 py-1 rounded-full shadow"
+        >
+          <ArrowLeft className="w-5 h-5" />
+          Back
+        </button>
+      </div>
       {departments.map((dept) => {
         const routePath = dept === 'All Departments' ? '/courses' : `/courses/${dept}`;
         const isActive =

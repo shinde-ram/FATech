@@ -1,6 +1,7 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import DepartmentSelector from './DepartmentSelector';
+
 
 export default function Courses() {
 
@@ -12,6 +13,7 @@ export default function Courses() {
           🎉 Visit our institute in person and get an <span className="underline underline-offset-4">extra discount</span> on selected courses!
         </p>
       </div>
+      
 
       <DepartmentSelector />
       <Outlet />
