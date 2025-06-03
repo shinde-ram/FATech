@@ -106,7 +106,7 @@ const Gallery = () => {
               data-aos="fade-up"
               data-aos-delay={index * 100}
               onClick={() => item.type === 'image' && setSelectedImage(item)}
-              className="break-inside-avoid p-2 cursor-pointer group overflow-hidden rounded-lg shadow-md bg-gray-100 transform hover:scale-105 transition-transform duration-300"
+              className="break-inside-avoid p-2 cursor-pointer group overflow-hidden rounded-lg shadow-md bg-gray-100 "
             >
               {item.type === 'image' ? (
                 <img
