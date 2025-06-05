@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 
 import ReviewCard from './ReviewCard';
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
-import { Reviews } from '../../data/Reviews';
+import { Reviews } from '../../Data/Reviews';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
