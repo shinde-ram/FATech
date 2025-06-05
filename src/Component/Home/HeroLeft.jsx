@@ -19,7 +19,7 @@ function HeroLeft() {
         >
           <img src={logo} alt="logo fatech" className="max-w-64" />
           <p
-            className="text-lg sm:text-xl md:text-2xl font-extrabold text-center tracking-wide pb-12"
+            className="text-md sm:text-xl md:text-2xl font-extrabold text-center tracking-wide pb-12"
             style={{ fontFamily: "'Henny Penny', cursive" }}
           >
             <span className="text-black">Education 🔶</span>{' '}

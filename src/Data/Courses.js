@@ -1,25 +1,41 @@
-    import autocad from '../assets/courses-thumbnail/autocad-thumbnail.jpg'
-    import fullstack from '../assets/courses-thumbnail/full-stack-thumbnail.jpg'
-    import python from '../assets/courses-thumbnail/python-thumbnail.webp'
-    import dsa from '../assets/courses-thumbnail/dsa-thumbnail.webp'
-    import solidwork from '../assets/courses-thumbnail/solidworks-thumbnail.webp'
-    import creo from '../assets/courses-thumbnail/creo-thumbnail.webp'
-    import revit from '../assets/courses-thumbnail/revit-thumbnail.webp'
-    import autocivil from '../assets/courses-thumbnail/autocad-civil-thumbnail.webp'
-    import sketchup from '../assets/courses-thumbnail/sketchup-thumbnail.webp'
+import fullstack from '../assets/courses-thumbnail/full-stack-thumbnail.webp'
+import python from '../assets/courses-thumbnail/python-thumbnail.webp'
+import dsa from '../assets/courses-thumbnail/dsa-thumbnail.webp'
+import datascience from '../assets/courses-thumbnail/data-science-thumbnail.jpg'
+import java from '../assets/courses-thumbnail/java-thumbnail.jpg'
+import basiclanguages from '../assets/courses-thumbnail/basic-languages.avif'
+
+import autocad from '../assets/courses-thumbnail/autocad-thumbnail.webp'
+import catia from '../assets/courses-thumbnail/catia-thumbnail.png'
+import solidwork from '../assets/courses-thumbnail/solidworks-thumbnail.jpg'
+import creo from '../assets/courses-thumbnail/creo-thumbnail.webp'
+
+import revit from '../assets/courses-thumbnail/revit-thumbnail.webp'
+import autocivil from '../assets/courses-thumbnail/autocad-civil-thumbnail.webp'
+import sketchup from '../assets/courses-thumbnail/sketchup-thumbnail.webp'
 
 
-   export const allCourses = {
+export const allCourses = {
   Mechanical: [
     {
-      title: "AutoCAD Essentials",
+      title: "AutoCAD",
       description:
-        "Master 2D drafting and technical drawings for mechanical systems. Learn to create precise layouts, understand layer management, and produce professional blueprints. Ideal for engineering students and professionals entering the CAD field. Real-world projects and case studies included. Boost your confidence in mechanical design basics.",
-      duration: "6 weeks",
-      image: autocad,
-      dis: 30,
-      price: 7000,
-      offerPrice: 4900,
+        "Learn the fundamentals of AutoCAD tailored for mechanical engineering. Master 2D and 3D drafting, modeling, dimensioning, and mechanical design principles to create precise engineering drawings and blueprints.",
+      duration: "3 Months",
+      image: autocad, // make sure to import or define the 'autocad' image
+      dis: 20,
+      price: 8000,
+      offerPrice: 5999,
+    },
+    {
+      title: "CATIA",
+      description:
+        "Master CATIA software for mechanical design and engineering. Learn 3D modeling, assembly design, drafting, surface modeling, and simulation techniques used in the automotive, aerospace, and manufacturing industries.",
+      duration: "4 Months",
+      image: catia, // make sure to import or define the 'catia' image
+      dis: 25,
+      price: 15000,
+      offerPrice: 11999,
     },
     {
       title: "SolidWorks 3D Design",
@@ -47,22 +63,22 @@
     {
       title: "Full Stack Web Development",
       description:
-        "Become a full-stack developer with HTML, CSS, JavaScript, React, Node.js, and MongoDB. Build complete responsive websites and backend services. Work on capstone projects with deployment. Learn API creation, frontend-backend integration, and project management techniques.",
-      duration: "10 weeks",
+        "Become a full-stack developer with HTML, CSS, JavaScript, React, Node.js, Spring Boot, and SQL/NoSQL. Build complete responsive websites and backend services. Work on capstone projects with deployment. Learn API creation, frontend-backend integration, and project management techniques.",
+      duration: "4/6 Months",
       image: fullstack,
-      dis: 40,
-      price: 15000,
-      offerPrice: 9000,
+      dis: 30,
+      price: 27500,
+      offerPrice: 19999,
     },
     {
       title: "Python Programming",
       description:
         "From variables to automation — complete beginner to advanced Python. Learn OOP, file handling, automation scripts, data visualization, and web scraping. Perfect for aspiring developers, data scientists, and AI enthusiasts.",
-      duration: "6 weeks",
+      duration: "3 Months",
       image: python,
-      dis: 30,
-      price: 10000,
-      offerPrice: 7000,
+      dis: 35,
+      price: 27700,
+      offerPrice: 17999,
     },
     {
       title: "Data Structures & Algorithms",
@@ -74,6 +90,38 @@
       price: 12000,
       offerPrice: 7800,
     },
+    {
+      title: "Data Science",
+      description:
+        "Master data science with Python, statistics, data visualization, machine learning, and deep learning. Learn tools like Pandas, NumPy, Scikit-learn, Matplotlib, and TensorFlow. Work on real-world datasets, build predictive models, and deploy ML projects. Includes capstone projects and portfolio guidance.",
+      duration: "5/6 Months",
+      image: datascience, // Make sure to import or define 'datascience' image
+      dis: 35,
+      price: 30000,
+      offerPrice: 19499,
+    },
+    {
+      title: "Advanced Java Programming",
+      description:
+        "Learn core and advanced Java programming, including OOP, collections, exception handling, JDBC, Servlets, JSP, and Spring Boot. Build console and web-based applications with real-world use cases. Develop RESTful APIs and understand deployment using tools like Maven and Git.",
+      duration: "4/5 Months",
+      image: java, // make sure to import or define the 'java' image
+      dis: 25,
+      price: 25000,
+      offerPrice: 17999,
+    },
+    {
+      title: "Programming Languages",
+      description:
+        "Pick any one programming basics course: C/C++, Java, or Python. Each course costs individually and covers fundamental programming concepts with hands-on practice.",
+      duration: "2 Months",
+      image: basiclanguages, // make sure to import or define the 'java' image
+      dis: 40,
+      price: 10000,
+      offerPrice: 5999,
+    },
+
+
   ],
 
   Civil: [
