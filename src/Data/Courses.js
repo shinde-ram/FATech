@@ -9,10 +9,17 @@ import autocad from '../assets/courses-thumbnail/autocad-thumbnail.webp'
 import catia from '../assets/courses-thumbnail/catia-thumbnail.png'
 import solidwork from '../assets/courses-thumbnail/solidworks-thumbnail.jpg'
 import creo from '../assets/courses-thumbnail/creo-thumbnail.webp'
+import ugnx from '../assets/courses-thumbnail/ug-nx-cad.jpg'
+import hypermesh from '../assets/courses-thumbnail/hypermesh-thumbnail.webp'
+import ansys from '../assets/courses-thumbnail/ansys-thumbnail.png'
 
 import revit from '../assets/courses-thumbnail/revit-thumbnail.webp'
 import autocivil from '../assets/courses-thumbnail/autocad-civil-thumbnail.webp'
 import sketchup from '../assets/courses-thumbnail/sketchup-thumbnail.webp'
+import twinmotion from '../assets/courses-thumbnail/twinmotion-thumbnail.webp'
+import staddpro from '../assets/courses-thumbnail/staad-pro-thumbnail.webp'
+import etabs from '../assets/courses-thumbnail/etabs-thumbnail.png'
+import lumion from '../assets/courses-thumbnail/lumion-thumbnail.jpg'
 
 
 export const allCourses = {
@@ -57,6 +64,36 @@ export const allCourses = {
       price: 8000,
       offerPrice: 6000,
     },
+    {
+      title: "UG NX CAD",
+      description:
+        "Master Siemens NX for 3D modeling, assemblies, drafting, and sheet metal design. This course is tailored for mechanical engineers and includes real-world industrial projects used in automotive and manufacturing design workflows.",
+      duration: "5 weeks",
+      image: ugnx, // replace 'ugnx' with your actual image import or path
+      dis: 25,
+      price: 8000,
+      offerPrice: 6000,
+    },
+    {
+      title: "HyperMesh",
+      description:
+        "Learn HyperMesh for high-performance finite element preprocessing. This course covers geometry cleanup, meshing techniques, 1D/2D/3D elements, and model setup for structural, thermal, and crash analysis—widely used in the automotive and aerospace industries.",
+      duration: "5 weeks",
+      image: hypermesh, // Replace with your actual image import or path
+      dis: 25,
+      price: 8000,
+      offerPrice: 6000,
+    },
+    {
+      title: "ANSYS",
+      description:
+        "Master ANSYS Workbench for structural, thermal, and modal analysis. This course includes geometry import, meshing, boundary condition setup, and result interpretation, all aligned with real-world engineering simulations used in industries like automotive and aerospace.",
+      duration: "5 weeks",
+      image: ansys, // Replace with your actual image import or path
+      dis: 25,
+      price: 8000,
+      offerPrice: 6000,
+    },
   ],
 
   IT_CS: [
@@ -71,7 +108,7 @@ export const allCourses = {
       offerPrice: 19999,
     },
     {
-      title: "Python Programming",
+      title: "Advanced Python Programming",
       description:
         "From variables to automation — complete beginner to advanced Python. Learn OOP, file handling, automation scripts, data visualization, and web scraping. Perfect for aspiring developers, data scientists, and AI enthusiasts.",
       duration: "3 Months",
@@ -128,32 +165,72 @@ export const allCourses = {
     {
       title: "Revit",
       description:
-        "Hands-on training in building information modeling using Revit. Design structures, analyze layouts, and generate accurate 3D visualizations. Useful for civil engineers, architects, and designers.",
-      duration: "6 weeks",
-      image: revit,
-      dis: 30,
-      price: 10000,
-      offerPrice: 7000,
+        "Learn Revit for Building Information Modeling (BIM) with a focus on architecture, structural elements, and construction documentation. This course equips civil engineers with tools to create 3D models, generate plans, and manage construction data efficiently.",
+      duration: "5 weeks",
+      image: revit, // Replace with your actual image import or path
+      dis: 25,
+      price: 8000,
+      offerPrice: 6000,
     },
     {
       title: "AutoCAD for Civil",
       description:
-        "Learn civil drafting, planning, and layout using AutoCAD. Focused modules on elevation design, contour mapping, and site planning. Practice with real-world templates and design workflows.",
-      duration: "5 weeks",
-      image: autocivil,
-      dis: 35,
-      price: 8000,
-      offerPrice: 5200,
+        "Learn 2D drafting and detailing with AutoCAD for civil engineering applications. This course covers site plans, building layouts, road profiles, cross-sections, and essential tools used in infrastructure and construction documentation.",
+      duration: "4 weeks",
+      image: autocivil, // Replace with your actual image import or path
+      dis: 25,
+      price: 6000,
+      offerPrice: 4500,
     },
     {
       title: "SketchUp",
       description:
-        "Learn to model, render, and present architectural designs using SketchUp. Covers 3D modeling fundamentals, rendering plugins, and layout presentation. Ideal for beginners and intermediate civil or interior designers.",
+        "Learn SketchUp for 3D modeling and architectural visualization. This course covers everything from creating basic shapes to detailed building models, rendering, and layout documentation—perfect for civil, architecture, and interior design students.",
       duration: "4 weeks",
-      image: sketchup,
-      dis: 30,
+      image: sketchup, // Replace with your actual image import or path
+      dis: 25,
       price: 6000,
-      offerPrice: 4200,
+      offerPrice: 4500,
+    },
+    {
+      title: "Twinmotion",
+      description:
+        "Master Twinmotion for real-time 3D visualization and immersive architectural presentations. This course guides you through importing models, applying materials, lighting, animation, and exporting stunning images and videos—ideal for architecture and design students.",
+      duration: "4 weeks",
+      image: twinmotion, // Replace with your actual image import or path
+      dis: 25,
+      price: 7000,
+      offerPrice: 5200,
+    },
+    {
+      title: "STAAD Pro",
+      description:
+        "Learn STAAD.Pro for structural analysis and design of buildings, bridges, and other infrastructure projects. This course covers modeling, load application, analysis methods, and design checks according to international codes—perfect for civil and structural engineering students.",
+      duration: "5 weeks",
+      image: staddpro, // Replace with your actual image import or path
+      dis: 30,
+      price: 8000,
+      offerPrice: 6000,
+    },
+    {
+      title: "ETABS",
+      description:
+        "Learn ETABS for advanced structural analysis and design of buildings. This course covers model creation, load application, analysis, and design of steel and concrete structures following international codes—ideal for civil and structural engineering students.",
+      duration: "5 weeks",
+      image: etabs, // Replace with your actual image import or path
+      dis: 30,
+      price: 8500,
+      offerPrice: 6500,
+    },
+    {
+      title: "Lumion",
+      description:
+        "Master Lumion for stunning architectural visualization and rendering. This course covers importing models, applying materials, adding environments, animations, and producing high-quality images and videos—perfect for architects, interior designers, and visualizers.",
+      duration: "4 weeks",
+      image: lumion, // Replace with your actual image import or path
+      dis: 25,
+      price: 7000,
+      offerPrice: 5200,
     },
   ],
 };

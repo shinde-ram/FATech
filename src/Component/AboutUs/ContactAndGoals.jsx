@@ -57,8 +57,8 @@ const ContactAndGoals = () => {
             </div>
             <div className="flex items-center gap-3 break-all">
               <FaInstagram className="text-pink-600 text-xl" />
-              <a href="https://instagram.com/future_advanced_technologies" target="_blank" rel="noreferrer">
-                @future_advanced_technologies
+              <a href="https://instagram.com/futureadvancedtechnologies" target="_blank" rel="noreferrer">
+                @futureadvancedtechnologies
               </a>
             </div>
             <div className="flex items-center gap-3 break-all">

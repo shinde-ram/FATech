@@ -3,10 +3,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import CoursesCard from './CoursesCardHome';
-import bg from '../../assets/courses-bg.jpg';
 import mechanicalBg from '../../assets/mech.png';
 import itBg from '../../assets/it.png';
 import civilBg from '../../assets/civil.png';
+import entc from "../../assets/entc.png"
 
 function CoursesSection() {
   useEffect(() => {
@@ -16,24 +16,27 @@ function CoursesSection() {
   const softwareByCategory = {
     Mechanical: {
       list: [
-        'AutoCAD', 'SolidWorks', 'HyperMesh', 'CATIA',
-        'Ansys', 'NX CAD', 'Creo', 'MATLAB',
+        'AutoCAD', 'SolidWorks','Ansys', 'HyperMesh'
       ],
       bg: mechanicalBg,
     },
     Civil: {
       list: [
-        'Revit', 'STAAD Pro', 'AutoCAD Civil 3D', 'ETABS',
-        'SketchUp', '3ds Max', 'MS Project', 'Primavera',
+        'Revit', 'STAAD Pro', 'AutoCAD Civil 3D', 
       ],
       bg: civilBg,
     },
     IT_CS: {
       list: [
-        'C', 'Data Structures', 'Full Stack Development', 'Python',
-        'C++', 'Java', 'JavaScript', 'React', 'Node.js', 'SQL', 'Machine Learning',
+         'Java', 'Python', 'Full Stack Development'
       ],
       bg: itBg,
+    },
+     ENTC: {
+      list: [
+         'AutoCAD', 'Creo Cabling', 'Wiring & Harness'
+      ],
+      bg: entc,
     },
   };
 
@@ -47,7 +50,7 @@ function CoursesSection() {
         <div className="absolute inset-0 opacity-10"></div>
 
         {/* Content */}
-        <div className="relative" data-aos="fade-left">
+        <div className="relative w-[100%] flex flex-col justify-center items-center" data-aos="fade-left">
           <div>
             <h2
               className="text-6xl font-bold mb-10 text-blue-600"
@@ -57,7 +60,7 @@ function CoursesSection() {
             </h2>
           </div>
           <div
-            className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            className="grid gap-8 md:gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 3xl:grid-cols-3 w-[100%] sm:w-[70%] md:w-[100%] lg:w-[90%] xl:w-[70%]  "
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -65,7 +68,7 @@ function CoursesSection() {
               <div key={category} data-aos="zoom-in-up" data-aos-delay="300">
                 <CoursesCard
                   category={category}
-                  list={list.slice(0, 3)}
+                  list={list}
                   bg={bg}
                 />
               </div>

@@ -14,17 +14,17 @@ export const Syllabus = {
       "Plotting and Printing Engineering Drawings",
       "Introduction to Parametric Design and Constraints",
     ],
-    "CATIA":[
+    "CATIA": [
       "Introduction to CATIA Interface and Navigation",
-    "Sketcher Workbench – Creating 2D Profiles",
-    "Part Design – Solid Modeling Basics",
-    "Assembly Design – Creating and Managing Assemblies",
-    "Drafting – Generating Engineering Drawings",
-    "Surface Modeling – Advanced Shape Design",
-    "Generative Shape Design Workbench",
-    "Sheet Metal Design",
-    "Simulation and Analysis Basics",
-    "Product Data Management (PDM) Basics",
+      "Sketcher Workbench – Creating 2D Profiles",
+      "Part Design – Solid Modeling Basics",
+      "Assembly Design – Creating and Managing Assemblies",
+      "Drafting – Generating Engineering Drawings",
+      "Surface Modeling – Advanced Shape Design",
+      "Generative Shape Design Workbench",
+      "Sheet Metal Design",
+      "Simulation and Analysis Basics",
+      "Product Data Management (PDM) Basics",
     ],
     "SolidWorks 3D Design": [
       "Sketching basics and constraints",
@@ -39,6 +39,41 @@ export const Syllabus = {
       "Mechanism design",
       "Assembly and simulation",
       "Engineering drawing generation"
+    ],
+    "UG NX CAD": [
+      "Introduction to Siemens NX Interface and Workspace Navigation",
+      "Sketching – Creating and Constraining 2D Profiles",
+      "Solid Modeling – Extrude, Revolve, Sweep, and Loft Features",
+      "Part Modeling – Shell, Draft, Mirror, and Pattern Tools",
+      "Assembly Design – Component Insertion and Constraints",
+      "Drafting – Creating 2D Drawings with Dimensions and BOM",
+      "Surface Modeling – Freeform and Class-A Surface Tools",
+      "Sheet Metal Design – Flange, Bend, Flat Pattern Development",
+      "Synchronous Modeling and Direct Editing Techniques",
+      "Import/Export – File Management, STEP/IGES/DXF Handling"
+    ], "HyperMesh": [
+      "Introduction to Finite Element Analysis (FEA) and HyperMesh Interface",
+      "Importing and Cleaning Geometry (CAD Cleanup Techniques)",
+      "Creating and Editing 1D Elements (Rods, Beams, Springs)",
+      "2D Meshing – Shell Elements for Surfaces",
+      "3D Meshing – Tetra and Hexa Elements for Solid Geometry",
+      "Mesh Quality Checks and Optimization Techniques",
+      "Material and Property Assignment",
+      "Creating Load Steps, Boundary Conditions, and Constraints",
+      "Setting up Models for Static, Modal, and Dynamic Analysis",
+      "Exporting Models for Solvers (OptiStruct, Radioss, Abaqus, etc.)"
+    ],
+    "ANSYS": [
+      "Introduction to FEA and ANSYS Workbench Interface",
+      "Geometry Import and Simplification (CAD Cleanup)",
+      "2D and 3D Meshing Techniques",
+      "Material Properties and Section Assignment",
+      "Static Structural Analysis – Loads, Constraints, and Results",
+      "Modal Analysis – Natural Frequency and Mode Shapes",
+      "Thermal Analysis – Steady-State and Transient Heat Transfer",
+      "Contact and Assembly Definition for Multi-Body Systems",
+      "Result Interpretation – Stress, Strain, Deformation, Temperature",
+      "Report Generation and Project Documentation"
     ],
   },
 
@@ -57,7 +92,7 @@ export const Syllabus = {
       "Deployment using Vercel, Netlify, Render or Railway",
       "Environment variables & basic security practices"
     ],
-    "Python Programming": [
+    "Advanced Python Programming": [
       "Python syntax and basic data types (int, float, string, list, tuple, dict, set)",
       "Control flow: if-else, loops (for, while), and comprehensions",
       "Functions, arguments, recursion, and modules",
@@ -132,25 +167,95 @@ export const Syllabus = {
 
   Civil: {
     "Revit": [
-      "Introduction to BIM and Revit interface",
-      "Structural components and families",
-      "Modeling and documentation",
-      "Collaboration tools",
-      "Rendering and visualization"
+      "Introduction to BIM and Revit Interface",
+      "Setting Up Projects – Units, Grids, and Levels",
+      "Creating and Modifying Walls, Doors, and Windows",
+      "Working with Floors, Roofs, and Ceilings",
+      "Structural Elements – Beams, Columns, Foundations",
+      "Creating Stairs, Ramps, and Railings",
+      "Annotations – Dimensions, Tags, and Text",
+      "Generating Floor Plans, Sections, and Elevations",
+      "Creating and Managing Schedules and Quantities",
+      "Sheet Creation, Title Blocks, and Printing",
+      "Collaborative Workflow and Project Sharing (Optional)"
     ],
     "AutoCAD for Civil": [
-      "Civil drawing basics",
-      "Site plans and topography",
-      "Layouts and profiles",
-      "Contour and elevation mapping",
-      "Plotting and annotations"
+      "Introduction to AutoCAD Interface and Basic Commands",
+      "Drawing Settings – Units, Limits, Layers, and Object Properties",
+      "Line Tools – Line, Polyline, Arc, Circle, Rectangle, Ellipse",
+      "Modify Tools – Move, Copy, Rotate, Trim, Extend, Offset, Mirror",
+      "Working with Layers and Line Types for Civil Elements",
+      "Creating Site Plans and Plot Layouts",
+      "Road Layouts, Profiles, and Cross Sections",
+      "Plan and Elevation Views of Buildings",
+      "Annotation – Text, Dimensions, Hatching, and Leaders",
+      "Blocks, WBlocks, and External References (Xrefs)",
+      "Printing Layouts, Viewports, and Paper Space Management"
     ],
-    "Ssketchup": [
-      "SketchUp interface and tools",
-      "3D modeling basics",
-      "Architectural drawing",
-      "Extensions and rendering",
-      "Creating walkthroughs"
+    "SketchUp": [
+      "Introduction to SketchUp Interface and Tools",
+      "Drawing and Editing 2D Shapes and Lines",
+      "Creating and Modifying 3D Models",
+      "Using Push/Pull, Follow Me, and Offset Tools",
+      "Working with Components, Groups, and Layers",
+      "Importing and Applying Materials and Textures",
+      "Creating Furniture, Windows, and Doors",
+      "Modeling Small Buildings and Room Layouts",
+      "Adding Scenes, Shadows, and Section Cuts",
+      "Rendering Basics using V-Ray or Lumion (Optional)",
+      "Exporting Models and Layout for Presentation"
     ],
+    "Twinmotion": [
+      "Introduction to Twinmotion Interface and Navigation",
+      "Importing and Preparing 3D Models",
+      "Using the Library: Materials, Objects, and Vegetation",
+      "Applying and Editing Materials and Textures",
+      "Lighting Setup: Sun, Sky, and Artificial Lights",
+      "Adding and Animating People, Vehicles, and Objects",
+      "Creating and Controlling Weather and Seasons",
+      "Setting up Cameras and Paths for Animation",
+      "Creating Real-time Renderings and Flythroughs",
+      "Using Post-Processing Effects and Filters",
+      "Exporting Images, Videos, and VR Experiences"
+    ],
+    "STAAD Pro": [
+      "Introduction to STAAD.Pro Interface and Workflow",
+      "Creating Structural Models: Beams, Columns, and Frames",
+      "Defining Material Properties and Sections",
+      "Applying Loads: Dead, Live, Wind, and Seismic",
+      "Load Combinations and Load Cases Setup",
+      "Performing Structural Analysis and Understanding Results",
+      "Design of Steel Structures as per IS and AISC Codes",
+      "Design of Concrete Structures with Code Compliance",
+      "Working with Drawings and Detailing Tools",
+      "Generating Reports and Exporting Data",
+      "Advanced Topics: Dynamic Analysis and Optimization"
+    ],
+    "ETABS": [
+  "Introduction to ETABS Interface and Navigation",
+  "Creating and Modifying Structural Models",
+  "Defining Material Properties and Section Properties",
+  "Applying Loads: Dead, Live, Wind, and Seismic",
+  "Load Combinations and Load Case Management",
+  "Performing Linear and Nonlinear Analysis",
+  "Design of Steel Structures as per Codes",
+  "Design of Concrete Structures with Reinforcement Detailing",
+  "Working with Floor Systems and Slabs",
+  "Generating Structural Drawings and Reports",
+  "Advanced Topics: Pushover Analysis and Time History Analysis"
+],
+"Lumion": [
+  "Introduction to Lumion Interface and Navigation",
+  "Importing 3D Models from SketchUp, Revit, etc.",
+  "Applying and Customizing Materials and Textures",
+  "Placing Objects: Trees, People, Furniture, and Vehicles",
+  "Lighting Setup: Daylight, Artificial Lights, and Night Scenes",
+  "Adding Water, Weather Effects, and Sky Customization",
+  "Creating Realistic Landscapes and Environments",
+  "Animating Camera Paths, Objects, and People",
+  "Adding Special Effects: Depth of Field, Lens Flares, and Reflections",
+  "Rendering High-Quality Images and Walkthrough Videos",
+  "Exporting and Presentation Techniques for Clients"
+],
   },
 };

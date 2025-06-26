@@ -18,10 +18,10 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold mb-3">Quick Links</h4>
           <ul className="space-y-2 text-gray-300">
-            <li><a href="#" className="hover:text-white">Home</a></li>
-            <li><a href="#" className="hover:text-white">Courses</a></li>
-            <li><a href="#" className="hover:text-white">Placements</a></li>
-            <li><a href="#" className="hover:text-white">Contact</a></li>
+            <li><a href="/" className="hover:text-white">Home</a></li>
+            <li><a href="/courses" className="hover:text-white">Courses</a></li>
+            <li><a href="/about" className="hover:text-white">About us</a></li>
+            <li><a href="/gallery" className="hover:text-white">Gallery</a></li>
           </ul>
         </div>
 
@@ -29,12 +29,11 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold mb-3">Top Courses</h4>
           <ul className="space-y-2 text-gray-300">
-            <li><a href="#" className="hover:text-white">Mechanical Design (CAD/CAEs)</a></li>
-            <li><a href="#" className="hover:text-white">Full Stack</a></li>
-            <li><a href="#" className="hover:text-white">Civil Engineering (AutoCAD, Revit)</a></li>
-            <li><a href="#" className="hover:text-white">Web Development</a></li>
-            <li><a href="#" className="hover:text-white">Java + DSA</a></li>
-            <li><a href="#" className="hover:text-white">Python with AI</a></li>
+            <li><a href={`/courses/Mechanical`} className="hover:text-white">Mechanical Design (CAD/CAEs)</a></li>
+            <li><a href={`/courses/IT_CS/Full%20Stack%20Web%20Development`} className="hover:text-white">Full Stack</a></li>
+            <li><a href="/courses/Civil" className="hover:text-white">Civil Engineering (AutoCAD, Revit)</a></li>
+            <li><a href={`/courses/IT_CS/Data%20Structures%20&%20Algorithms`} className="hover:text-white">Data Structure and Alogorithm</a></li>
+            <li><a href="/courses/IT_CS/Advanced%20Python%20Programming" className="hover:text-white">Python with AI</a></li>
           </ul>
         </div>
 
@@ -46,7 +45,7 @@ const Footer = () => {
           <div className="flex space-x-4 mt-4">
             <a href="https://facebook.com/future_advanced_technologies" target="_blank"><Facebook className="text-gray-300 hover:text-white" /></a>
            
-            <a href="https://instagram.com/future_advanced_technologies" target="_blank"><Instagram className="text-gray-300 hover:text-white " /></a>
+            <a href="https://instagram.com/futureadvancedtechnologies" target="_blank"><Instagram className="text-gray-300 hover:text-white " /></a>
             <a href="mailto:futureadvancedtechnologies@gmail.com" target="_blank"><Mail className="text-gray-300 hover:text-white" /></a>
           </div>
         </div>

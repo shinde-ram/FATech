@@ -8,7 +8,7 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row gap-10 items-center mb-16  justify-center w-[90%]  ">
             <div className="md:w-1/2 flex flex-col justify-center items-center">
                 <img src={logo} alt="Who We Are" className="w-[80%] md:w-[70%]" />
-                <p className="text-lg md:text-2xl font-extrabold text-center tracking-wide pb-12">
+                <p className="text-md md:text-2xl font-extrabold text-center tracking-wide pb-12">
                     <span className="text-black" style={{ fontFamily: "'Henny Penny', cursive" }}>Education 🔶</span>{' '}
                     <span style={{ fontFamily: "'Henny Penny', cursive" }}>Excellence 🔶</span>{' '}
                     <span style={{ fontFamily: "'Henny Penny', cursive" }}>Employment</span>

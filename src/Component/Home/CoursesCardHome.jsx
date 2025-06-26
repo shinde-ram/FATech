@@ -16,7 +16,7 @@ function CoursesCard({ category, list,bg }) {
                             {list.map((element, index) => (
                                 <a
                                     key={index}
-                                    href="#"
+                                    href={`/courses/${category}/${element}`}
                                     className="md:text-[16px] cursor-pointer text-[14px] md:mr-[10px] mr-[7px] leading-[22px] my-[6px] lg:px-[24px] px-[16px] md:py-[12px] py-[9px] text-[#3D3D3D] text-center border border-[#d6a857] rounded-[28px]"
                                 >
                                     {element}
