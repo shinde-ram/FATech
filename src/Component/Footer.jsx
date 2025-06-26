@@ -1,5 +1,6 @@
 import React from "react";
-import { Facebook, Twitter, Instagram, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Facebook, Instagram, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -25,17 +26,40 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Top Courses */}
+
+
         <div>
           <h4 className="text-lg font-semibold mb-3">Top Courses</h4>
           <ul className="space-y-2 text-gray-300">
-            <li><a href={`/courses/Mechanical`} className="hover:text-white">Mechanical Design (CAD/CAEs)</a></li>
-            <li><a href={`/courses/IT_CS/Full%20Stack%20Web%20Development`} className="hover:text-white">Full Stack</a></li>
-            <li><a href="/courses/Civil" className="hover:text-white">Civil Engineering (AutoCAD, Revit)</a></li>
-            <li><a href={`/courses/IT_CS/Data%20Structures%20&%20Algorithms`} className="hover:text-white">Data Structure and Alogorithm</a></li>
-            <li><a href="/courses/IT_CS/Advanced%20Python%20Programming" className="hover:text-white">Python with AI</a></li>
+            <li>
+              <Link to="/courses/Mechanical" className="hover:text-white">
+                Mechanical Design (CAD/CAEs)
+              </Link>
+            </li>
+            <li>
+              <Link to="/courses/IT_CS/Full%20Stack%20Web%20Development" className="hover:text-white">
+                Full Stack
+              </Link>
+            </li>
+            <li>
+              <Link to="/courses/Civil" className="hover:text-white">
+                Civil Engineering (AutoCAD, Revit)
+              </Link>
+            </li>
+            <li>
+              <Link to="/courses/IT_CS/Data%20Structures%20&%20Algorithms" className="hover:text-white">
+                Data Structure and Algorithm
+              </Link>
+            </li>
+            <li>
+              <Link to="/courses/IT_CS/Advanced%20Python%20Programming" className="hover:text-white">
+                Python with AI
+              </Link>
+            </li>
           </ul>
         </div>
+
+
 
         {/* Contact Info & Socials */}
         <div>
@@ -44,7 +68,7 @@ const Footer = () => {
           <p className="text-gray-400 mt-2">Email: futureadvancedtechnologies@gmail.com</p>
           <div className="flex space-x-4 mt-4">
             <a href="https://facebook.com/future_advanced_technologies" target="_blank"><Facebook className="text-gray-300 hover:text-white" /></a>
-           
+
             <a href="https://instagram.com/futureadvancedtechnologies" target="_blank"><Instagram className="text-gray-300 hover:text-white " /></a>
             <a href="mailto:futureadvancedtechnologies@gmail.com" target="_blank"><Mail className="text-gray-300 hover:text-white" /></a>
           </div>
