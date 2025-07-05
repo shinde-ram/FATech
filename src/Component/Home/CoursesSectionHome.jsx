@@ -32,7 +32,7 @@ function CoursesSection() {
       ],
       bg: itBg,
     },
-     ENTC: {
+     ENTc: {
       list: [
          'AutoCAD', 'Creo Cabling', 'Wiring & Harness'
       ],

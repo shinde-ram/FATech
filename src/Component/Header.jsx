@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
-import { PiPhoneCallFill } from "react-icons/pi";
+import { FaInstagram } from "react-icons/fa";
 
 import wsp from '../assets/wsp.json'
 import Lottie from 'lottie-react';
@@ -30,7 +30,7 @@ function Header() {
                 </div>
 
                 {/* Right Side Buttons and Nav */}
-                <div className="w-[30%] md:w-1/2 flex md:flex-row-reverse  justify-center md:justify-end items-center">
+                <div className="w-[30%] md:w-1/2 flex md:flex-row-reverse  justify-center md:justify-center items-center">
                     {/* WhatsApp & Call (Always Visible) */}
                     <div className="flex items-center justify-center md:gap-6 mr-4 w-[30%] md:w-[30%]">
                         <a
@@ -46,18 +46,27 @@ function Header() {
 
 
                         </a>
-                        <a href="tel:+917720074666" className=" ">
-                            <div className='p-3.5 text-md md:text-xl xl:text-3xl  text-white bg-green-500 rounded-full hover:scale-115 ease-in-out duration-300 hidden md:flex'>
+                        <a
+                            href="https://www.instagram.com/futureadvancedtechnologies"
+                            target="_blank"
 
-                                <PiPhoneCallFill />
+                        ><div
+                            className="w-14 h-14  items-center justify-center ms-5
+                                        text-white text-3xl text-center 
+                                        bg-gradient-to-tr from-pink-500 to-purple-600 
+                                        rounded-full hover:scale-110 transition-transform duration-300 
+                                        hidden lg:flex"
+                        >
+                                <FaInstagram />
                             </div>
-                            <span className='relative left-1 md:left-3 font-bold hidden md:flex'>Call</span>
 
+                            <span className="relative left-1 md:left-3 font-bold hidden lg:flex">Instagram</span>
                         </a>
+
                     </div>
 
                     {/* Desktop Menu */}
-                    <ul className="hidden md:flex w-[40%] md:w-[60%] justify-evenly text-black">
+                    <ul className="hidden md:flex w-[40%] md:w-[60%] justify-evenly text-black text-lg">
                         <li className="transform-gpu transition-transform duration-300 hover:scale-105">
                             <NavLink className={({ isActive }) => `${isActive ? 'text-yellow-600  border-b-2 border-yellow-800' : ''} font-semibold p-2 hover:text-yellow-600 ease-in-out duration-100`} to={"/"}>Home</NavLink>
                         </li>

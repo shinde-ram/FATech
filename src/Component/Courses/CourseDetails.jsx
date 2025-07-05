@@ -1,6 +1,10 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import { allCourses } from '../../Data/Courses';
 import React from 'react';
+import AOS from 'aos';
+
+import 'aos/dist/aos.css';
+
 import { Syllabus } from '../../Data/Syllabus'; // Adjust path
 import { ArrowLeft } from 'lucide-react';
 
@@ -15,7 +19,7 @@ const CourseDetails = () => {
     navigate(`/courseEnroll/${courseParam}`);
   };
 
-  const courses = department === "All Departments"
+  const courses = department === "All"
     ? Object.entries(allCourses).flatMap(([dept, courseList]) =>
       courseList.map(course => ({ ...course, department: dept }))
     )
@@ -49,11 +53,11 @@ const CourseDetails = () => {
         </button>
       </div>
 
-      <div className="w-[90%] md:w-[80%] mx-auto py-10">
+      <div className="w-[90%] md:w-[80%] mx-auto py-10" >
         {/* Top Section: Image and Info */}
-        <div className="flex flex-col md:flex-row gap-10">
+        <div className="flex flex-col md:flex-row gap-10" >
           {/* Course Image */}
-          <div className="md:w-1/2">
+          <div className="md:w-1/2" data-aos="fade-right" data-aos-delay="200">
             <img
               src={course.image}
               alt={course.title}
@@ -62,7 +66,7 @@ const CourseDetails = () => {
           </div>
 
           {/* Info Section */}
-          <div className="flex-1">
+          <div className="flex-1" data-aos="fade-left" data-aos-delay="200">
             <h1 className="text-3xl font-bold text-blue-800 mb-3">{course.title}</h1>
             <p className="text-gray-700 mb-5 leading-relaxed">{course.description}</p>
 
@@ -73,7 +77,7 @@ const CourseDetails = () => {
                 <span className="text-green-600 font-semibold ml-1">₹{course.offerPrice}</span>
                 <span className="text-sm text-gray-500">({course.dis}% off)</span>
               </li>
-              <li><strong>📅 Mode:</strong> Online / Offline</li>
+              <li><strong>📅 Mode:</strong> {department == "IT_CS" ? "Online / Offline" : "Offline"}</li>
               <li><strong>📈 Level:</strong> Beginner to Advanced</li>
             </ul>
 
@@ -84,11 +88,11 @@ const CourseDetails = () => {
         </div>
 
         {syllabus && (
-          <div className="mt-12 flex flex-col md:flex-row-reverse gap-6 w-full md:w-[100%] mx-auto">
+          <div className="mt-12 flex flex-col md:flex-row-reverse gap-6 w-full md:w-[100%] mx-auto" >
             {/* Combined What You’ll Learn + What Will You Get (right on md+, below on small) */}
             <div className="flex flex-col w-full md:w-1/2 gap-6 order-3 md:order-2">
               {/* What You’ll Learn */}
-              <div className="bg-blue-100 rounded-xl py-6 md:p-6 shadow-sm border border-blue-200">
+              <div className="bg-blue-100 rounded-xl py-6 md:p-6 shadow-sm border border-blue-200" data-aos="fade-up" data-aos-delay="200">
                 <h2 className="text-2xl font-bold text-blue-800 mb-5 flex items-center gap-2">
                   📚 What You’ll Learn
                 </h2>
@@ -106,7 +110,7 @@ const CourseDetails = () => {
               </div>
 
               {/* What Will You Get */}
-              <div className="bg-green-50 rounded-xl py-6 md:p-6 border border-green-200 shadow-sm">
+              <div className="bg-green-50 rounded-xl py-6 md:p-6 border border-green-200 shadow-sm" data-aos="fade-up" data-aos-delay="200">
                 <h2 className="text-2xl font-bold text-green-800 mb-5 flex items-center gap-2">
                   🎁 What Will You Get
                 </h2>
@@ -119,7 +123,7 @@ const CourseDetails = () => {
             </div>
 
             {/* Syllabus Section (left on md+, above What You’ll Learn on small) */}
-            <div className=" w-full md:w-1/2 ">
+            <div className=" w-full md:w-1/2 " data-aos="fade-up" data-aos-delay="200">
               <div className='bg-green-100 rounded-xl py-6 md:p-6  order-2 md:order-1 flex flex-col'>
 
                 <h2 className="text-2xl font-bold text-blue-800 mb-4">📝 Short Syllabus</h2>

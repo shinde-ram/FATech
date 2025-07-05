@@ -232,30 +232,116 @@ export const Syllabus = {
       "Advanced Topics: Dynamic Analysis and Optimization"
     ],
     "ETABS": [
-  "Introduction to ETABS Interface and Navigation",
-  "Creating and Modifying Structural Models",
-  "Defining Material Properties and Section Properties",
-  "Applying Loads: Dead, Live, Wind, and Seismic",
-  "Load Combinations and Load Case Management",
-  "Performing Linear and Nonlinear Analysis",
-  "Design of Steel Structures as per Codes",
-  "Design of Concrete Structures with Reinforcement Detailing",
-  "Working with Floor Systems and Slabs",
-  "Generating Structural Drawings and Reports",
-  "Advanced Topics: Pushover Analysis and Time History Analysis"
-],
-"Lumion": [
-  "Introduction to Lumion Interface and Navigation",
-  "Importing 3D Models from SketchUp, Revit, etc.",
-  "Applying and Customizing Materials and Textures",
-  "Placing Objects: Trees, People, Furniture, and Vehicles",
-  "Lighting Setup: Daylight, Artificial Lights, and Night Scenes",
-  "Adding Water, Weather Effects, and Sky Customization",
-  "Creating Realistic Landscapes and Environments",
-  "Animating Camera Paths, Objects, and People",
-  "Adding Special Effects: Depth of Field, Lens Flares, and Reflections",
-  "Rendering High-Quality Images and Walkthrough Videos",
-  "Exporting and Presentation Techniques for Clients"
-],
+      "Introduction to ETABS Interface and Navigation",
+      "Creating and Modifying Structural Models",
+      "Defining Material Properties and Section Properties",
+      "Applying Loads: Dead, Live, Wind, and Seismic",
+      "Load Combinations and Load Case Management",
+      "Performing Linear and Nonlinear Analysis",
+      "Design of Steel Structures as per Codes",
+      "Design of Concrete Structures with Reinforcement Detailing",
+      "Working with Floor Systems and Slabs",
+      "Generating Structural Drawings and Reports",
+      "Advanced Topics: Pushover Analysis and Time History Analysis"
+    ],
+    "Lumion": [
+      "Introduction to Lumion Interface and Navigation",
+      "Importing 3D Models from SketchUp, Revit, etc.",
+      "Applying and Customizing Materials and Textures",
+      "Placing Objects: Trees, People, Furniture, and Vehicles",
+      "Lighting Setup: Daylight, Artificial Lights, and Night Scenes",
+      "Adding Water, Weather Effects, and Sky Customization",
+      "Creating Realistic Landscapes and Environments",
+      "Animating Camera Paths, Objects, and People",
+      "Adding Special Effects: Depth of Field, Lens Flares, and Reflections",
+      "Rendering High-Quality Images and Walkthrough Videos",
+      "Exporting and Presentation Techniques for Clients"
+    ],
   },
+ ENTc: {
+  "AutoCAD Electrical": [
+    "Introduction to AutoCAD Electrical Interface and Workspaces",
+    "Creating New Projects and Managing File Structures",
+    "Drawing and Editing Electrical Schematics",
+    "Working with Wires, Wire Numbers, and Signal Arrows",
+    "Inserting and Configuring Electrical Components from Libraries",
+    "Creating and Managing Circuits using Circuit Builder",
+    "PLC Modules: Configuration, I/O Addressing, and Ladder Layouts",
+    "Creating Custom Symbols, Footprints, and Catalog Entries",
+    "Cross-Referencing, Wire Sequencing, and Error Checking Tools",
+    "Generating Automated Reports: BOM, Wire List, Terminal Reports",
+    "Panel Layout Design – Placement of Components in Panel Drawings",
+    "Setting Drawing Properties, Title Blocks, and Plotting Projects"
+  ],
+
+  "Wiring and Harness Design": [
+    "Fundamentals of Electrical Wiring and Harness Applications",
+    "Understanding Connectors, Terminals, Cables, and Wire Types",
+    "Electrical Standards: IPC, ISO, and Automotive Guidelines",
+    "Creating Wiring Diagrams and Schematics using Standard Symbols",
+    "Techniques for Cable Routing and Clipping",
+    "Connector Selection, Tables, and Pin Configuration",
+    "3D Harness Routing Workflow in Tools like SolidWorks or CATIA",
+    "Creating Wiring Tables and BOM Generation for Manufacturing",
+    "Wire Length Calculation, Optimization, and Bend Radius Handling",
+    "Testing Techniques: Continuity, Insulation, and Resistance Checks",
+    "Troubleshooting Faults and Diagnosing Harness Failures"
+  ],
+
+  "Creo Cabling": [
+    "Overview of Cabling Environment in Creo",
+    "Creating Logical Diagrams in Creo Schematics",
+    "Defining and Assigning Spools, Wires, and Parameters",
+    "Placing Connectors, Pins, and Entry Ports in Assemblies",
+    "Routing Wires and Cables using Manual and Auto Route Tools",
+    "Managing Network and Routing Preferences",
+    "Creating Flattened Harness Drawings for Manufacturing",
+    "Using Cabling Parameters for Length Calculation and BOM",
+    "Creating and Managing Cable Reports and Drawings",
+    "Annotations: Wire Numbers, Labels, and Callouts",
+    "Exporting Reports, DXF Files, and Integrating with Electrical Tools"
+  ],
+
+  "Embedded Systems": [
+    "Architecture and Types of Embedded Systems",
+    "Basics of Embedded C Programming – Data Types, Loops, and Functions",
+    "Setting Up and Programming with Arduino or STM32 IDE",
+    "Digital Interfacing: LEDs, Switches, Keypads, and Displays",
+    "Analog Interfacing: ADC, DAC, Temperature Sensors, Potentiometers",
+    "Timers, Delays, Counters, and Interrupt Handling",
+    "PWM Techniques for Motor Control and Servo Handling",
+    "UART, SPI, and I2C Communication Protocols with Real Examples",
+    "Project Development: Line Follower, Motion Sensor, Smart Fan, etc.",
+    "Debugging Tools: Serial Monitor, Simulators, and Logic Analyzers",
+    "Flashing Firmware and Uploading Code via ISP/USB Bootloaders"
+  ],
+
+  "HIL Testing": [
+    "Understanding HIL – Purpose, Benefits, and Use-Cases",
+    "Block Diagram and Architecture of a Standard HIL Setup",
+    "Introduction to dSPACE, NI PXI, or Speedgoat Systems",
+    "Creating Real-Time Simulation Models in Simulink or LabVIEW",
+    "ECU Testing – Inputs/Outputs, Fault Injection, and Communication Interfaces",
+    "Interfacing with Sensors and Actuators (Digital & Analog)",
+    "Signal Conditioning and Timing Synchronization",
+    "Script Writing for Automated Test Scenarios",
+    "Monitoring and Analyzing Response in Real-Time",
+    "Reporting and Logging Data for Compliance",
+    "Safety Standards and Precautionary Measures in HIL Testing"
+  ],
+
+  "Internet of Things (IoT)": [
+    "IoT Architecture: Sensors → Gateway → Cloud → Application",
+    "Getting Started with ESP8266/ESP32 Microcontrollers",
+    "Sensor Interfacing: DHT11, PIR, LDR, IR, Ultrasonic",
+    "Reading Analog & Digital Signals and Data Formatting",
+    "Wi-Fi & Bluetooth Setup for Network Connectivity",
+    "Sending Data to IoT Platforms: ThingSpeak, Blynk, Firebase",
+    "Working with MQTT Protocol for Publish/Subscribe Communication",
+    "Creating Dashboards for Remote Monitoring & Control",
+    "Data Storage, Visualization, and Real-Time Alerts",
+    "Security: HTTPS, Authentication, and IoT Best Practices",
+    "Mini Projects: Smart Lighting, Weather Station, Intruder Alarm"
+  ]
+},
 };

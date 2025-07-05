@@ -69,10 +69,15 @@ const ContactAndGoals = () => {
             </div>
             <div className="flex items-center gap-3 break-all">
               <FaEnvelope className="text-blue-600 text-xl" />
-              <a href="mailto:futureadvancedtechnologies@gmail.com" target="_blank"> 
-                futureadvancedtechnologies@gmail.com
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=hr@thefatech.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                hr@thefatech.com
               </a>
             </div>
+
           </div>
         </div>
       </div>

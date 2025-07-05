@@ -16,7 +16,7 @@ import video3 from '../assets/gallery/2D-drafting.mp4';
 const GalleryItem = [
   { src: img2, type: "image", desc: 'Front side of Visiting Card' },
   { src: img3, type: "image", desc: 'Back side of Visiting Card' },
-  { src: img1, type: "image", desc: 'Official 1Saath Logo' },
+  { src: img1, type: "image", desc: 'Official Fatech Logo' },
   { src: img4, type: "image", desc: 'Training ' },
   { src: img5, type: "image", desc: 'Student Of CAE' },
   { src: video3, type: "video", desc: '2D-Drafting with angle projection project' },

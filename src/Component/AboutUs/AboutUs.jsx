@@ -10,6 +10,7 @@ import Feature from '../Home/Feature';
 import Number from '../Home/NumberBox';
 import Placement from "../Home/Placement";
 import { useNavigate } from 'react-router-dom';
+import Map from './Map';
 
 const AboutUs = () => {
     const navigate = useNavigate();
@@ -39,7 +40,7 @@ const AboutUs = () => {
                 </p>
             </div>
 
-            
+
             <button
                 onClick={scrollToTop}
                 className="fixed bottom-5 left-3 z-50 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition"
@@ -54,6 +55,10 @@ const AboutUs = () => {
 
             <div data-aos="fade-up" data-aos-delay="200">
                 <ContactAndGoals />
+            </div>
+
+            <div data-aos="fade-up" className="flex flex-col md:flex-row w-full gap-6">
+                <Map/>
             </div>
 
             <div data-aos="fade-up" data-aos-delay="400">
